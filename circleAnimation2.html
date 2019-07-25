@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#circle").click(function(){
+      $("#circle1").animate({top: "275px",left:"624px"});
+      $("#circle1").animate({top: "10px",left:"1249px"});
+      $("#circle1").animate({left:"624px",top: "275px"});
+      $("#circle1").animate({left:"1249px",top: "550px"});
+      $("#circle1").animate({left:"624px",top: "275px"});
+      $("#circle1").animate({left:"10px",top: "550px"});
+      $("#circle1").animate({left:"624px",top: "275px"});
+      $("#circle1").animate({top: "10px",left:"10px"});
+        
+        
+      $("#circle2").animate({left:"624px",top: "275px"});
+      $("#circle2").animate({left:"1249px",top: "550px"});
+      $("#circle2").animate({left:"624px",top: "275px"});
+      $("#circle2").animate({left:"10px",top: "550px"});
+      $("#circle2").animate({left:"624px",top: "275px"});
+      $("#circle2").animate({top: "10px",left:"10px"});
+      $("#circle2").animate({top: "275px",left:"624px"});
+      $("#circle2").animate({top: "10px",left:"1249px"});
+      
+      $("#circle3").animate({left:"624px",top: "275px"});
+      $("#circle3").animate({left:"10px",top: "550px"});
+      $("#circle3").animate({left:"624px",top: "275px"});
+      $("#circle3").animate({top: "10px",left:"10px"});
+      $("#circle3").animate({top: "275px",left:"624px"});
+      $("#circle3").animate({top: "10px",left:"1249px"});
+      $("#circle3").animate({left:"624px",top: "275px"});
+      $("#circle3").animate({left:"1249px",top: "550px"});
+      
+        
+      $("#circle4").animate({left:"624px",top: "275px"});
+      $("#circle4").animate({top: "10px",left:"10px"});
+      $("#circle4").animate({top: "275px",left:"624px"});
+      $("#circle4").animate({top: "10px",left:"1249px"});
+      $("#circle4").animate({left:"624px",top: "275px"});
+      $("#circle4").animate({left:"1249px",top: "550px"});
+      $("#circle4").animate({left:"624px",top: "275px"});
+      $("#circle4").animate({left:"10px",top: "550px"});
+      
+        
+    });
+    });
+    </script>
+    <style>      
+      #circle{
+        width:1349px;
+        height:600px;
+      }
+
+      #circle1 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        border-radius: 100px;
+        background-color: red;
+      }
+      #circle2 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        left:1249px;
+        border-radius: 100px;
+        background-color: pink;
+      }
+      
+      #circle3 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top:550px;
+        left:1249px;
+        border-radius: 100px;
+        background-color: green;
+      }
+      #circle4 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top:550px;
+        border-radius: 100px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="circle">
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+    <div id="circle4"></div>
+    <script>
+    
+    </script>
+  </div>
+</body>
+</html>
