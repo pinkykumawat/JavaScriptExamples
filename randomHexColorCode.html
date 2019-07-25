@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            padding: 0px;
+        }
+        #col{
+            height:300px;
+            width:500px;
+            background-color: #ABCDEF ;
+        }
+        #test{
+            position: absolute;
+            height:200px;
+            width:200px;
+            background-color: pink ;
+        }
+    </style>
+</head>
+<body>
+    <div id="col" onclick="changeColor();">Click Here!</div>
+    <p id="test" onmouseover="hover(this)"></p>
+    
+    <script>
+    function hover(x){
+     var newtop = (Math.floor(Math.random() *400 ));
+     var newleft = (Math.floor(Math.random() * 1149));
+     x.style.top= newtop+'px';
+     x.style.left= newleft+'px' ;
+    }
+    </script>
+
+    <script>
+    function changeColor() {
+    var letters = "0123456789ABCDEF"; 
+    var color = '#'; 
+    for (var i = 0; i < 6; i++) 
+    color += letters[(Math.floor(Math.random() * 16))]; 
+    document.getElementById('col').style.backgroundColor = color;
+    }
+    </script>
+
+    <script>
+    // var colors = ["pink", "blue", "yellow" , "cyan", "green"];
+    // var newcolor = colors[Math.floor(Math.random()*colors.length)];
+    // document.getElementById('col').style.backgroundColor = newcolor;
+
+    // function changeColor(){
+    // document.getElementById('col').style.backgroundColor = randomColor;
+    // var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});    
+    // };    
+    </script>
+</body>
+</html>
