@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    $("#circle").click(function(){
+        $("#circle").animate({left: "1249px"});
+        $("#circle").animate({top: "550px"});
+        $("#circle").animate({left: "10px"});
+        $("#circle").animate({top: "10px"});
+    });
+    });
+    </script>
+    <style>
+      #circle {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        border-radius: 100px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="circle"></div>
+    
+</body>
+</html>
