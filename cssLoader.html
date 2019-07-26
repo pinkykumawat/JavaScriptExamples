@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.loader {
+    position: relative;
+    top:200px;
+    left:600px;
+    height:50px;
+    width:50px;
+    /* background-color:blue;  */
+   animation: spin 2s linear infinite;
+}
+@keyframes spin {
+25%{transform:rotate(180deg);}
+  100% { transform: rotate(360deg); }
+}
+.circle{
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    border-radius: 50%;
+}
+#circle1 {
+    top:0px;
+    left:0px;
+    background-color: red;
+  }
+  #circle2 {
+    top:0px;
+    left:40px;
+    background-color: pink;
+  }
+  #circle3 {
+    TOP:40px;
+    left:40px;
+    background-color: green;
+  }
+  #circle4 {
+    top:40px;
+    left:0px;
+    background-color: yellow;
+  }
+  </style>
+</head>
+<body>
+<div class="loader">
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+    <div class="circle" id="circle4"></div>
+  </div>
+</body>
+</html>
