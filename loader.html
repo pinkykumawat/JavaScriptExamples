@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+      var t = 0;
+      function moveit() {
+          t += 0.09;
+          var r = 30;
+          var xcenter = 624;
+          var ycenter = 275;
+          var newLeft = Math.floor(xcenter + (r * Math.cos(t)));
+          var newTop = Math.floor(ycenter + (r * Math.sin(t)));
+          $('#circle1').animate({top: newTop,left: newLeft,}, 40, function() {moveit();});
+          $('#circle2').animate({top: newTop,left: newLeft,}, 60, function() {moveit();});
+          $('#circle3').animate({top: newTop,left: newLeft,}, 70, function() {moveit();});
+          $('#circle4').animate({top: newTop,left: newLeft,}, 90, function() {moveit();});
+          $('#circle5').animate({top: newTop,left: newLeft,}, 110, function() {moveit();});
+          $('#circle6').animate({top: newTop,left: newLeft,}, 120, function() {moveit();});
+      }
+      $(document).ready(function() {
+          moveit();
+      });
+
+
+    </script>
+    <style>
+      .circle{
+        height: 10px;
+        width: 10px;
+        top:275px;
+        left:624px;
+        position: absolute;
+        border-radius: 100px;
+      }    
+      #circle1 {
+        background-color: red;
+      }
+      #circle2 {
+        background-color: pink;
+      }
+      
+      #circle3 {
+        background-color: green;
+      }
+      #circle4 {
+        background-color: yellow;
+      }
+      #circle5 {
+        background-color: blue;
+      }
+      #circle6 {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="circle" id="circle1"></div>
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+    <div class="circle" id="circle4"></div>
+    <div class="circle" id="circle5"></div>
+    <div class="circle" id="circle6"></div>
+  </div>
+  </body>
+</html>
